@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>League of Legends</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="web.css">
+    </header>
+    <body id="body">
+        <!-- 导航栏 -->
+      <div class="content-on" id="content-on-id">
+
+        <!-- play -->
+        <a href="javascript:play()"><img src="./photo1.png" width="161px" heigtht="39px" ></a>
+
+        <!-- 游戏 -->
+        <div class="content-on-1" id="content-on-game">
+            <a href="javascript:home_page()"><h2>主页</h2></a>
+            <div class="verticarBar"></div>
+            <a href="javascript:report()" id="report-a"><h2>报告</h2></a>
+        </div>
+
+        <!-- 藏品 -->
+        <div class="content-on-1" id="content-on-collection">
+            <a href="javascript:cereet()"><h2>生涯</h2></a>
+            <div class="verticarBar"></div>
+            <a href="javascript:collection()"><h2>藏品</h2></a>
+            <div class="verticarBar"></div>
+            <a href="javascript:shop()"><h2>商城</h2></a>
+            <div class="verticarBar"></div>
+        </div>
+
+        <!-- 点券 -->
+        <div>
+            <div class="verticarBar"></div>
+            <h4>点券:0</h4>
+            <h4>精粹</h4>
+        </div>
+
+        <!-- 用户 -->
+        <div class="content-on-1" id="content-on-user" >
+            <img src="./photo.png" width="79px" heigtht="79px">
+        </div>
+        <div>
+            <h4>地狱红桃K</h4>
+            <h4>在线</h4>
+        </div>
+        
+      </div>
+
+      <HR style="FILTER:alpha(opacity=100,finishopacity=0,style=1)" width="100%"color=azure SIZE=1>
+
+        <!-- 首页切换背景按钮 -->
+        <div class="two-arrows" id="content-arrow">
+            <a href="javascript:changeback()">
+                <div class="arrows1"></div>
+            </a>
+            <a href="javascript:changeback1()">
+                <div class="arrows"></div>
+            </a>
+        </div>
+
+        <div style="display: none" id="content-report" class="report">
+            <article style="color: black;">
+                <h1>通信软件开发应用</h1>
+                <h2>一.主要内容</h2>
+                <h3>1.基本介绍</h3>
+                <p>
+                    采用HTML+CSS技术实现一个中等复杂的静态界面。本界面基于热门游戏《英雄联盟》的国服客户端，实现部分界面和功能的展示和实现。
+                </p>
+                <h3>2.具体功能</h3>
+                <h4>（1）“play”按钮</h4>
+                <p>
+                    点击按钮后，将会更改导航栏下方的界面展示，点击下方的“开始”，界面右上方会显示一个计时器，一定时间后将会跳出一个弹窗，计时器停止。
+                </p>
+                <h4>（2）“首页”按钮</h4>
+                <p>
+                    首页将会在网页一开始进行展示，点击导航栏下方界面的“＜”和“>”，将会进行背景图片的切换。
+                </p>
+                <h4>（3）“报告”按钮</h4>
+                <p>
+                    点击该按钮，将会展示本报告，可以进行滑动。
+                </p>
+                <h4>（4）“生涯”按钮</h4>
+                <p>
+                    点击该按钮，将会进入一个简单的界面展示，展示头像和部分内容。
+                </p>
+                <h4>（5）“商城”按钮</h4>
+                <p>
+                    点击该按钮，将会进入一个界面展示，该内容有较多图片，点击图片后将跳出弹窗提示是否购买。
+                </p>
+                <h4>（6）导航栏</h4>
+                <p>
+                    导航放入上述的所有按钮，右方展示头像和名称。
+                </p>
+                <h2>二.开发过程</h2>
+                <h3>1.准备</h3>
+                <p>
+                    本网站仅使用HTML和CSS进行搭建，所以没有必要的前期准备，仅是对网站所用的图片进行准备。
+                </p>
+                <h3>2.具体过程</h3>
+                <p>
+                    （1）首先建立HTML和CSS文件，搭建HTML文件的基本框架。
+                </p>
+                <p>
+                    （2）确定网站界面的具体结构，得出网站分为上方导航栏和下方界面展示。
+               </p>
+               <h4>（3）功能实现</h4>
+                <p>
+                    本网站主要使用js和＜a>＜/a>进行下方界面的转换。
+                </p>
+                <p>
+                    点击导航栏的按钮，调用相应的函数，将当前页面隐藏，将展示的界面进行显示。
+                </p>
+                <h2>三.总结</h2>
+                <p>
+                    本界面仅使用HTML+CSS构成，实现的界面复杂度中等，实现了《英雄联盟》客户端的部分功能和部分界面展示，开发过程中遇到了很多问题，大多数都通过学习解决了，部分问题没有得到解决，在以后的进一步学习中会更加深入，解决更多更难的问题。
+                </p>
+            </article>
+        </div>
+
+        <div style="display: none" id="content-cereet" class="content-cereet-c">
+            <img src="./photo3.png" width="230.4px" height="570px">
+            <img src="./photo5.png" style="padding-top:15%" width="83%" height="350">
+        </div>
+
+        <div style="display: none" id="content-collection">
+            <div style="display: flex">
+                <img src="./photo7.png">
+                <img src="./photo8.png">
+                <img src="./photo9.png">
+                <img src="./photo10.png">
+                <img src="./photo11.png">
+            </div>
+        </div>
+
+        <div style="display: none " id="content-shop">
+            <div class="shop-c">
+                <a href="javascript:buy(1)">
+                    <img src="./photo12.png">
+                </a>
+                <a href="javascript:buy(2)">
+                    <img src="./photo13.png">
+                </a>
+                <a href="javascript:buy(3)">
+                    <img src="./photo14.png">
+                </a>
+                <a href="javascript:buy(4)">
+                    <img src="./photo15.png">
+                </a>
+                <a href="javascript:buy(5)">
+                    <img src="./photo16.png">
+                </a>
+                <a href="javascript:buy(6)">
+                    <img src="./photo17.png">
+                </a>
+            </div>
+        </div>
+
+        <div style="display: none" id="content-play" class="play-c">
+            <div id="play-c-1">
+                <img src="./photo18.png" width="192px" height="400px">
+            </div>
+            <div id="play-c-2">
+                <a href="javascript:playStart()">
+                    <img src="./photo19.png" width="159px" height="44px">
+                </a>
+            </div>
+
+            <div  id="start">
+                <h4 id="startTime">00:00</h4>
+            </div>
+        </div>
+    </body>
+
+    <script>
+
+
+        var photo=1;
+        function changeback()
+        {
+            if (photo==1)
+            {
+                document.body.style.background= "url(edg.jpg) center repeat";
+                photo=3;
+            }
+            else if (photo==2)
+            {
+                photo-=1;
+                document.body.style.background= "url(ig.jpeg) center no-repeat";
+            }
+
+            else if (photo==3)
+            {
+                photo-=1;
+                document.body.style.background= "url(fpx.jpg) center no-repeat";
+            }
+        }
+        
+        function changeback1()
+        {
+            if (photo==1)
+            {
+                document.body.style.background= "url(fpx.jpg) center no-repeat";
+                photo=2;
+            }
+            else if (photo==2)
+            {
+                photo=3;
+                document.body.style.background= "url(edg.jpg) center repeat";
+            }
+
+            else if (photo==3)
+            {
+                photo=1;
+                document.body.style.background= "url(ig.jpeg) center no-repeat";
+            }
+        }
+
+        function report()
+        {
+            document.body.style.background="aquamarine";
+            document.getElementById("content-report").style="display:";
+            document.getElementById("content-arrow").style="display:none";
+            document.getElementById("content-cereet").style="display:none";
+            document.getElementById("content-collection").style="display:none";
+            document.getElementById("content-shop").style="display:none"; 
+            document.getElementById("content-play").style="display:none";   
+        }
+ 
+        function home_page()
+        {
+            document.body.style.background= "url(ig.jpeg) center no-repeat";
+            photo=1;   
+            document.getElementById("content-report").style="display:none";
+            document.getElementById("content-arrow").style="display:";
+            document.getElementById("content-cereet").style="display:none";
+            document.getElementById("content-collection").style="display:none";
+            document.getElementById("content-shop").style="display:none"; 
+            document.getElementById("content-play").style="display:none";   
+        }
+
+        function cereet()
+        {
+            document.body.style.background="url(photo4.png) center repeat";
+            document.getElementById("content-report").style="display:none";
+            document.getElementById("content-arrow").style="display:none";
+            document.getElementById("content-collection").style="display:none";
+            document.getElementById("content-cereet").style="display:";
+            document.getElementById("content-shop").style="display:none"; 
+            document.getElementById("content-play").style="display:none";   
+        }
+
+        function collection()
+        {
+            document.body.style.background="#06141d";
+            document.getElementById("content-report").style="display:none";
+            document.getElementById("content-arrow").style="display:none";
+            document.getElementById("content-cereet").style="display:none";
+            document.getElementById("content-collection").style="display:";
+            document.getElementById("content-shop").style="display:none";
+            document.getElementById("content-play").style="display:none";     
+        }
+
+        function shop()
+        {
+            document.body.style.background="#06141d";
+            document.getElementById("content-report").style="display:none";
+            document.getElementById("content-arrow").style="display:none";
+            document.getElementById("content-cereet").style="display:none";
+            document.getElementById("content-collection").style="display:none";
+            document.getElementById("content-shop").style="display:";  
+            document.getElementById("content-play").style="display:none";    
+        }
+
+        function buy(a)
+        {
+            if (a==1)
+            {
+                if(confirm("为海兽祭司 俄洛伊选择一款新皮肤！"))
+                {
+                    alert("购买成功！")
+                }
+            }
+
+            if (a==2)
+            {
+                if(confirm("为虚空女皇 卑尔维斯选择一款新皮肤！"))
+                {
+                    alert("购买成功！")
+                }
+            }
+
+            if (a==4)
+            {
+                if(confirm("为圣枪游侠 卢锡安选择一款新皮肤！"))
+                {
+                    alert("购买成功！")
+                }
+            }
+
+            if (a==5)
+            {
+                if(confirm("为星界游神 巴德选择一款新皮肤！"))
+                {
+                    alert("购买成功！")
+                }
+            }
+
+            if (a==6)
+            {
+                if(confirm("为虚空之女 卡莎选择一款新皮肤！"))
+                {
+                    alert("购买成功！")
+                }
+            }
+
+            if (a==3)
+            {
+                if(confirm("为大发明家 黑默丁格选择一款新皮肤！"))
+                {
+                    alert("购买成功！")
+                }
+            }
+            
+        }
+
+        function play()
+        {
+            document.body.style.background="#052031";
+            document.getElementById("content-report").style="display:none";
+            document.getElementById("content-arrow").style="display:none";
+            document.getElementById("content-cereet").style="display:none";
+            document.getElementById("content-collection").style="display:none";
+            document.getElementById("content-shop").style="display:none";   
+            document.getElementById("content-play").style="display:";   
+        }
+
+
+        var time=0;
+        var time2;
+        function playStart()
+        {
+            time2=Math.floor(Math.random() * (130 - 2 + 1)) +2;
+            setInterval(playStart1,1000);
+            alert("预计需要"+time2+"s");
+        }
+
+        function playStart1(){
+            time+=1;
+            var time1=parseInt(time/60);
+            if (time<10)
+            {
+                if (time%60<10)
+                {
+                    document.getElementById("startTime").innerHTML="0"+time1+":0"+time%60;
+                }
+                else{
+                    document.getElementById("startTime").innerHTML="0"+time1+":"+time%60;
+                }
+            }
+
+            else{
+                if (time%60<10)
+                {
+                    document.getElementById("startTime").innerHTML=time1+":0"+time%60;
+                }
+                else{
+                    document.getElementById("startTime").innerHTML=time1+":"+time%60;
+                }
+            }
+            if (time==time2)
+            {
+                alert("已寻找到对局！");
+                time=0;
+                clearInterval();
+                location.reload();
+            }
+        }
+    </script>
+</html>

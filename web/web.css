@@ -1,0 +1,98 @@
+.content-on{
+    display: flex;
+    height: 20%;
+    align-items:center;
+}
+
+.content-on-1{
+    display: flex;
+}
+
+.content-on-1 > a{
+    padding-right: 6px;
+    color :#cdbe91;
+    text-decoration:none;
+}
+
+.content-on-1 > div{
+    margin-right: 6px;
+}
+
+#content-on-game{
+    padding-left: 10px;
+}
+
+#content-on-collection{
+    padding-left:45%;
+}
+
+#content-on-user{
+    padding-left: 5%;
+    float:right;
+}
+
+.verticarBar{
+    width: 1px;
+    background: darkgray;
+}
+
+body{
+    background: url(ig.jpeg) center no-repeat;
+    background-size: 100% 100%;
+    height: 700px;
+}
+
+.two-arrows{
+    display: flex;
+    padding-top: 10%;
+    justify-content: space-between;
+}
+
+.arrows{
+    width: 0;
+    height: 0;
+    border-left: 30px double rgb(37, 92, 187);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+}
+
+.arrows1{
+    float: right;
+    width: 0;
+    height: 0;
+    border-right: 30px double rgb(37, 92, 187);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    
+}
+
+.report{
+    padding-left:20%;
+    padding-right: 10%;
+    
+}
+
+.content-cereet-c{
+    display: flex;
+}
+
+.shop1{
+    margin: 0 auto;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.play-c >div {
+   padding-left: 40%;
+} 
+
+#play-c-1{
+    padding-left: 38.5%;
+    padding-bottom: 5%;
+}
+
+#start{
+    float:right;
+    color:red;
+}
